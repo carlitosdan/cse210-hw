@@ -4,9 +4,12 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("What is the magic number? ");
-        string mn = Console.ReadLine();
-        int magicNumber = int.Parse(mn);
+        //Console.WriteLine("What is the magic number? ");
+        //string mn = Console.ReadLine();
+        //int magicNumber = int.Parse(mn);
+
+        Random randomGenerator = new Random();
+        int magicNumber = randomGenerator.Next(1, 100);
 
         int yourNumber = 0;
 
@@ -26,7 +29,7 @@ class Program
 
 
        }
-       
+
         if(yourNumber == magicNumber){
             Console.WriteLine("You guessed it!");
         }
