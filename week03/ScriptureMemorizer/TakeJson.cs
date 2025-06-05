@@ -20,6 +20,8 @@ public class TakeJson
     public TakeJson(string filePath)
     {
         _filePath = filePath;
+
+        
     }
 
     public Scripture GetRandomScripture()
