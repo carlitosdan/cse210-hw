@@ -24,7 +24,25 @@ public class Words
 
     public string GetDisplayText()
     {
-        return _isHidden ? "_____" : _word;
+        if (_isHidden)
+        {
+            string xString = "";
+            int digit = _word.Length;
+            for (int i = 0; i < digit; i++)
+            {
+                xString = "_" + xString;
+            }
+
+            return xString;
+
+        }
+        else
+        {
+         return _word; 
+        }
+
+
+        
     }
     
 
